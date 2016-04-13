@@ -1,0 +1,10 @@
+import com.testappreatapijsonviews.One
+
+model {
+  Many many
+}
+
+json g.render(many, [includes:['id', 'name']]) {
+	// test comment
+	anotherAttr 'some additional attr ...'
+}

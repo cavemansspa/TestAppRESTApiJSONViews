@@ -1,0 +1,8 @@
+import com.testappreatapijsonviews.One
+
+model {
+	Iterable<One> oneList
+}
+
+json tmpl.one(oneList ?: [])
+

@@ -1,0 +1,16 @@
+import com.testappreatapijsonviews.One
+
+model {
+	One one
+}
+
+json g.render(one, [excludes: ['many']]) {
+	// this works from same directory
+	many tmpl.many( one.many )
+
+	// this doesn't work
+	//many tmpl.'/many/_many'( one.many )
+
+	// this doesn't work
+	// many tmpl.'../many/_many'( one.many )
+}

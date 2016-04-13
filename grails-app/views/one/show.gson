@@ -1,0 +1,7 @@
+import com.testappreatapijsonviews.One
+
+model {
+	One one
+}
+
+json tmpl.one(one)
